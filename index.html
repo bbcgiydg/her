@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Happy Birthday Website 2.0 | Aoudumber Bade">
+    <meta name="github" content="https://github.com/Aoudumber-Bade">
+    <title>Ana Morales Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" autoplay loop volume="0.3">
+        <source src="https://www.youtube.com/watch?v=OAc6OrYnDzs" type="audio/mpeg">
+    </audio>
+
+    <div id="wrapper">
+        <!-- Falling Hearts -->
+        <div id="hearts-container"></div>
+
+        <!-- Countdown Timer -->
+        <div id="countdown-timer" class="countdown">
+            <div class="countdown-content">
+                <h2>Only <span id="hours">0</span>h <span id="minutes">0</span>m <span id="seconds">0</span>s until your special day! 💕</h2>
+            </div>
+        </div>
+
+        <!-- Background Labels -->
+        <label class="bg-label label1">love</label>
+        <label class="bg-label label2">Princess</label>
+        <label class="bg-label label3">Happy</label>
+        <label class="bg-label label4">Birthday</label>
+        <label class="bg-label label5">Ana</label>
+        <label class="bg-label label6">Celebrate</label>
+        <label class="bg-label label7">Joy</label>
+        <label class="bg-label label8">You</label>
+        <label class="bg-label label9">Forever</label>
+        <label class="bg-label label10">Smile</label>
+        
+        <div class="flag__birthday">
+            <img src="./images/1.png" alt="" width="350" class="flag__left">
+            <img src="./images/1.png" alt="" width="350" class="flag__right">
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="title">
+                    <h1 class="happy">
+                        <span style="--t: 4s;">H</span>
+                        <span style="--t: 4.2s;">a</span>
+                        <span style="--t: 4.4s;">p</span>
+                        <span style="--t: 4.6s;">p</span>
+                        <span style="--t: 4.8s;">y</span>
+                    </h1>
+                    <h1 class="birthday">
+                        <span style="--t: 5s;">B</span>
+                        <span style="--t: 5.2s;">i</span>
+                        <span style="--t: 5.4s;">r</span>
+                        <span style="--t: 5.6s;">t</span>
+                        <span style="--t: 5.8s;">h</span>
+                        <span style="--t: 6s;">d</span>
+                        <span style="--t: 6.2s;">a</span>
+                        <span style="--t: 6.4s;">y</span>
+                    </h1>
+                    <div class="hat">
+                        <img src="./images/hat.png" alt="" width="130">
+                    </div>
+                </div>
+                <div class="date__of__birth">
+                    <span></span>
+                </div>
+                <div class="btn">
+                    <button id="btn__letter">
+                        <div class="mail">
+                            Click Here Ana Morales
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </button>
+                    <button id="btn__memories">
+                        <div class="memories">
+                            Click Here for Memories
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </button>
+                    <button id="btn__music">
+                        <div class="music">
+                            Click Here for Music
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                    </button>
+                    <button id="btn__gift">
+                        <div class="gift">
+                            🎁 Open a Gift
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="box__account">
+                    <div class="image">
+                        <img src="./images/ana/WhatsApp Image 2026-01-27 at 9.12.16 PM.jpeg" alt="Ana Morales">
+                    </div>
+                    <div class="name">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Dear Ana Morales</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="gallery-container">
+                        <div class="gallery">
+                            <img src="./images/ana/WhatsApp Image 2026-01-27 at 9.12.16 PM (1).jpeg" alt="Ana" class="gallery-img">
+                            <img src="./images/ana/WhatsApp Image 2026-01-27 at 9.12.16 PM (2).jpeg" alt="Ana" class="gallery-img">
+                            <img src="./images/ana/WhatsApp Image 2026-01-27 at 9.12.17 PM.jpeg" alt="Ana" class="gallery-img">
+                            <img src="./images/ana/WhatsApp Image 2026-01-27 at 9.12.17 PM (1).jpeg" alt="Ana" class="gallery-img">
+                        </div>
+                        <button class="gallery-btn prev" onclick="changeGallery(-1)">❮</button>
+                        <button class="gallery-btn next" onclick="changeGallery(1)">❯</button>
+                    </div>
+                    <div class="balloon_one">
+                        <img width="100px" src="./images/balloon1.png" alt="">
+                    </div>
+                    <div class="balloon_two">
+                        <img width="100px" src="./images/balloon2.png" alt="">
+                    </div>
+                </div>
+                <div class="cricle">
+                    <div class="text__cricle">
+                        <span style="--i: 1;">h</span>
+                        <span style="--i: 2;">a</span>
+                        <span style="--i: 3;">p</span>
+                        <span style="--i: 4;">p</span>
+                        <span style="--i: 5;">y</span>
+                        <span style="--i: 6;">-</span>
+                        <span style="--i: 7;">b</span>
+                        <span style="--i: 8;">i</span>
+                        <span style="--i: 9;">r</span>
+                        <span style="--i: 10;">t</span>
+                        <span style="--i: 11;">h</span>
+                        <span style="--i: 12;">d</span>
+                        <span style="--i: 13;">a</span>
+                        <span style="--i: 14;">y</span>
+                        <span style="--i: 15;">-</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <div class="decorate_star star1" style="--t: 15s;"></div>
+        <div class="decorate_star star2" style="--t: 15.2s;"></div>
+        <div class="decorate_star star3" style="--t: 15.4s;"></div>
+        <div class="decorate_star star4" style="--t: 15.6s;"></div>
+        <div class="decorate_star star5" style="--t: 15.8s;"></div>
+        <div class="decorate_flower--one" style="--t: 15s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--two" style="--t: 15.3s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--three" style="--t: 15.6s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_bottom">
+            <img src="./images/decorate.png" alt="" width="100">
+        </div>
+        <div class="smiley__icon">
+            <img src="./images/smiley_icon.png" alt="" width="100">
+        </div>
+
+
+        <div class="boxMail">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="boxMail-container">
+                <div class="card1">
+                    <div class="userImg">
+                        <img src="./images/ana/WhatsApp Image 2026-01-27 at 9.12.16 PM.jpeg" alt="Ana Morales">
+                    </div>
+                    <h4 class="username">To: Ana Morales 💖<span class="underline"></span></h4>
+
+                    <h3>Happy Birthday</h3>
+                    <div class="imageCute">
+                        <img src="./images/ana/WhatsApp Image 2026-01-27 at 9.12.17 PM (2).jpeg" alt="">
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card2-content">
+                        <h3>To You!</h3>
+                        <h2 class="glowing-text">Happy birthday, Princess ❤️
+                            I hope today truly feels like your day and brings you easy smiles and real happiness. I know life hasn't always been light, but you keep going, you stay true to yourself, and that shows how strong you really are. Even when you doubt it, you are more than enough just as you are.
+                            I hope this year brings you peace, genuine love, and moments that feel calm instead of stressful. You deserve happiness that lasts and people who understand you without explanation. I'm so grateful to have you in my life, for your heart, your care, and the way you make everything better just by being you.
+                            I love you so much. Enjoy your day, baby 💕
+                            Your Husband, Your Daddy
+                            Nigel 😘
+                        </h2>
+
+                        <div class="imageCute2">
+                            <img src="./images/ana/WhatsApp Image 2026-01-27 at 9.12.17 PM (3).jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="boxMail memories-modal">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="memories-container">
+                <div class="memories-content">
+                    <h2 class="glowing-text">Things that daddy remembers about princess ❤️❤️❤️</h2>
+                    <p class="glowing-text memories-text">Ik your favorite food is sopes, tacos, ur favorite perfume is sweet and spicy rain. I've learnt alot like ur mexican, Ik that ur 5 feet, Ik where ur from(Texas) like Ik how you are, ur funny, sweet, a cutie pie, u got a good sense of humor, ur supportive, also intelligent, attentive and Ik that you'll make time for the people you love the most.
+                    <br><br>
+                    And u also told about ur life like ur parents did the bare minimum but they are emotionally absent from your life, they don't care about how you feel whether ur in tears or feeling sad
+                    <br><br>
+                    Also, you like to shop here and there to buy clothes, skincare products, lotions, body lotions, creams, perfumes, and Ik when you were born and it's not April lol, it's January 28, 2005, and Ik you got curly brown hair, your favorite color is pink, and that we met on September 4th on Roblox :).</p>
+                    <div class="memories-image">
+                        <img src="./images/ana/WhatsApp Image 2026-01-27 at 9.12.17 PM (4).jpeg" alt="Ana">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="boxMail music-modal">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="music-container">
+                <div class="music-content">
+                    <h2 class="glowing-text">Our Song 🎵</h2>
+                    <p class="glowing-text music-text">Here's a song for you, Princess</p>
+                    <div class="video-wrapper">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/7qcg-3_YGoY?si=VCmPfRKmU6uPbodE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="boxMail gift-modal">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="gift-container">
+                <div class="gift-box-wrapper">
+                    <div class="gift-box" id="giftBox">
+                        <div class="gift-box-top"></div>
+                        <div class="gift-box-bottom">
+                            <p>Click to open! 🎁</p>
+                        </div>
+                    </div>
+                    <div class="gift-message" id="giftMessage">
+                        <h2 class="glowing-text">You deserve everything beautiful ✨</h2>
+                        <p class="glowing-text">This year is going to be YOUR year, Princess. You're going to achieve amazing things, meet wonderful people, and create memories that will make you smile forever. 
+                        <br><br>
+                        I promise to be there for every moment - the happy ones to celebrate with you, and the tough ones to lift you up. You are stronger than you know, more beautiful than you believe, and loved more than you could ever imagine.
+                        <br><br>
+                        Happy 19th Birthday to my beautiful wife and princess! 
+                        <br>
+                        All my love,<br>Nigel 💕</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    let galleryIndex = 0;
+    
+    function changeGallery(n) {
+        const images = document.querySelectorAll('.gallery-img');
+        galleryIndex += n;
+        if (galleryIndex >= images.length) galleryIndex = 0;
+        if (galleryIndex < 0) galleryIndex = images.length - 1;
+        
+        images.forEach(img => img.style.display = 'none');
+        images[galleryIndex].style.display = 'block';
+    }
+    
+    // Initialize gallery
+    window.addEventListener('load', function() {
+        changeGallery(0);
+    });
+
+    // Mouse move parallax effect
+    let mouseX = 0;
+    let mouseY = 0;
+    let targetX = 0;
+    let targetY = 0;
+
+    document.addEventListener('mousemove', function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+
+    function updateParallax() {
+        const centerX = window.innerWidth / 2;
+        const centerY = window.innerHeight / 2;
+        
+        // Calculate movement relative to center (-1 to 1)
+        const moveX = ((mouseX - centerX) / centerX) * 30;
+        const moveY = ((mouseY - centerY) / centerY) * 30;
+        
+        // Smooth interpolation
+        targetX += (moveX - targetX) * 0.1;
+        targetY += (moveY - targetY) * 0.1;
+        
+        // Apply to body background
+        document.body.style.backgroundPosition = `calc(50% + ${targetX}px) calc(50% + ${targetY}px)`;
+    }
+
+    // Animation loop
+    setInterval(updateParallax, 50);
+
+
+    let datetxt = "28 January";
+    let datatxtletter = "Happy birthday, Princess ❤️ I hope today truly feels like your day and brings you easy smiles and real happiness. I know life hasn't always been light, but you keep going, you stay true to yourself, and that shows how strong you really are. Even when you doubt it, you are more than enough just as you are. I hope this year brings you peace, genuine love, and moments that feel calm instead of stressful. You deserve happiness that lasts and people who understand you without explanation. I'm so grateful to have you in my life, for your heart, your care, and the way you make everything better just by being you. I love you so much. Enjoy your day, baby 💕 Your Husband, Your Daddy Nigel 😘";
+    let titleLetter = "To you";
+    let charArrDate = datetxt.split('');
+    let charArrDateLetter = datatxtletter.split('');
+    let charArrTitle = titleLetter.split('');
+    let currentIndex = 0;
+    let currentIndexLetter = 0;
+    let currentIndexTitle = 0;
+    let date__of__birth = document.querySelector(".date__of__birth span");
+    let text__letter = document.querySelector(".text__letter p");
+    setTimeout(function () {
+        timeDatetxt = setInterval(function () {
+            if (currentIndex < charArrDate.length) {
+                date__of__birth.textContent += charArrDate[currentIndex];
+                currentIndex++;
+            }
+            else {
+                let i = document.createElement("i");
+                i.className = "fa-solid fa-star"
+                document.querySelector(".date__of__birth").prepend(i)
+                document.querySelector(".date__of__birth").appendChild(i.cloneNode(true))
+                clearInterval(timeDatetxt)
+            }
+        }, 100)
+    }, 12000)
+
+    var intervalContent;
+    var intervalTitle;
+    $("#btn__letter").on("click", function () {
+        $(".box__letter").slideDown()
+        setTimeout(function () {
+            $(".letter__border").slideDown();
+        }, 1000)
+        setTimeout(function () {
+            intervalTitle = setInterval(function () {
+                if (currentIndexTitle < charArrTitle.length) {
+                    document.querySelector(".title__letter").textContent += charArrTitle[currentIndexTitle];
+                    let i = document.createElement("i");
+                    i.className = "fa-solid fa-heart"
+                    document.querySelector(".title__letter").appendChild(i)
+                    currentIndexTitle++;
+                }
+                else {
+                    clearInterval(intervalTitle)
+                }
+            }, 100)
+        }, 2000)
+        setTimeout(function () {
+            document.querySelector("#heart__letter").classList.add("animationOp");
+            document.querySelector(".love__img").classList.add("animationOp");
+            document.querySelector("#mewmew").classList.add("animationOp");
+        }, 2800)
+        setTimeout(function () {
+            document.querySelectorAll(".heart").forEach((item) => {
+                item.classList.add("animation")
+            })
+        }, 3500)
+        setTimeout(function () {
+            intervalContent = setInterval(function () {
+                if (currentIndexLetter < charArrDateLetter.length) {
+                    text__letter.textContent += charArrDateLetter[currentIndexLetter];
+                    currentIndexLetter++;
+                }
+                else {
+                    clearInterval(intervalContent)
+                }
+            }, 50)
+        }, 6000)
+    })
+    $(".close").on("click", function () {
+        clearInterval(intervalContent)
+        document.querySelector(".title__letter").textContent = "";
+        text__letter.textContent = "";
+        currentIndexLetter = 0
+        currentIndexTitle = 0
+        document.querySelector("#heart__letter").classList.remove("animationOp");
+        document.querySelector(".love__img").classList.remove("animationOp");
+        document.querySelector("#mewmew").classList.remove("animationOp");
+        document.querySelectorAll(".heart").forEach((item) => {
+            item.classList.remove("animation")
+        })
+        $(".box__letter").slideUp();
+        $(".letter__border").slideUp();
+    })
+
+
+
+    let mailBox = document.querySelector('.mail')
+    let boxmail = document.querySelector('.boxMail:not(.memories-modal):not(.music-modal)')
+    let memoriesBtn = document.getElementById('btn__memories')
+    let memoriesModal = document.querySelector('.memories-modal')
+    let musicBtn = document.getElementById('btn__music')
+    let musicModal = document.querySelector('.music-modal')
+    let giftBox = document.getElementById('giftBox');
+    let giftMessage = document.getElementById('giftMessage');
+    let giftBtn = document.getElementById('btn__gift');
+    let giftModal = document.querySelector('.gift-modal');
+    let closeButtons = document.querySelectorAll('.fa-xmark')
+    
+    mailBox.onclick = function () {
+        mailBox.classList.toggle('active')
+        boxmail.classList.add('active')
+    }
+
+    memoriesBtn.onclick = function () {
+        memoriesModal.classList.add('active')
+    }
+
+    musicBtn.onclick = function () {
+        musicModal.classList.add('active')
+    }
+
+    // Close button handlers
+    closeButtons.forEach(btn => {
+        btn.addEventListener('click', function () {
+            if(boxmail.classList.contains('active')) {
+                boxmail.classList.remove('active')
+            } else if(memoriesModal.classList.contains('active')) {
+                memoriesModal.classList.remove('active')
+            } else if(musicModal.classList.contains('active')) {
+                musicModal.classList.remove('active')
+            } else if(giftModal.classList.contains('active')) {
+                giftModal.classList.remove('active')
+                giftBox.style.display = 'block';
+                giftMessage.style.display = 'none';
+            }
+        })
+    })
+
+    // Click outside modal to close
+    boxmail.addEventListener('click', function (e) {
+        if(e.target === boxmail) {
+            boxmail.classList.remove('active')
+        }
+    })
+
+    memoriesModal.addEventListener('click', function (e) {
+        if(e.target === memoriesModal) {
+            memoriesModal.classList.remove('active')
+        }
+    })
+
+    musicModal.addEventListener('click', function (e) {
+        if(e.target === musicModal) {
+            musicModal.classList.remove('active')
+        }
+    })
+
+    giftModal.addEventListener('click', function (e) {
+        if(e.target === giftModal) {
+            giftModal.classList.remove('active')
+            giftBox.style.display = 'block';
+            giftMessage.style.display = 'none';
+        }
+    })
+
+    giftModal.addEventListener('click', function (e) {
+        if(e.target === giftModal) {
+            giftModal.classList.remove('active')
+            giftBox.style.display = 'block';
+            giftMessage.style.display = 'none';
+        }
+    })
+
+    // Gift Box Interaction
+    giftBtn.onclick = function () {
+        giftModal.classList.add('active');
+        giftBox.style.display = 'block';
+        giftMessage.style.display = 'none';
+        triggerConfetti();
+    }
+    
+    giftBox.addEventListener('click', function() {
+        giftBox.style.display = 'none';
+        giftMessage.style.display = 'block';
+        triggerConfetti();
+    });
+    function triggerConfetti() {
+        for (let i = 0; i < 50; i++) {
+            createConfetti();
+        }
+    }
+
+    function createConfetti() {
+        const confetti = document.createElement('div');
+        confetti.style.position = 'fixed';
+        confetti.style.width = '10px';
+        confetti.style.height = '10px';
+        confetti.style.backgroundColor = ['#ff69b4', '#ff1493', '#ff69b4', '#ffc0cb'][Math.floor(Math.random() * 4)];
+        confetti.style.left = Math.random() * 100 + '%';
+        confetti.style.top = '-10px';
+        confetti.style.zIndex = '999';
+        confetti.style.borderRadius = '50%';
+        confetti.style.boxShadow = '0 0 20px currentColor';
+        document.body.appendChild(confetti);
+
+        let x = parseFloat(confetti.style.left);
+        let y = 0;
+        let vx = (Math.random() - 0.5) * 8;
+        let vy = Math.random() * 5 + 3;
+
+        let animation = setInterval(() => {
+            y += vy;
+            x += vx;
+            vy += 0.2;
+            confetti.style.top = y + 'px';
+            confetti.style.left = x + '%';
+            confetti.style.opacity = 1 - (y / window.innerHeight);
+
+            if (y > window.innerHeight) {
+                clearInterval(animation);
+                confetti.remove();
+            }
+        }, 30);
+    }
+
+    // Falling Hearts
+    function createFallingHeart() {
+        const heart = document.createElement('div');
+        heart.innerHTML = '❤️';
+        heart.style.position = 'fixed';
+        heart.style.fontSize = Math.random() * 20 + 15 + 'px';
+        heart.style.left = Math.random() * 100 + '%';
+        heart.style.top = '-50px';
+        heart.style.zIndex = '5';
+        heart.style.opacity = '0.7';
+        heart.style.pointerEvents = 'none';
+        heart.style.animation = 'heartFall ' + (Math.random() * 3 + 5) + 's linear forwards';
+        document.getElementById('hearts-container').appendChild(heart);
+
+        setTimeout(() => heart.remove(), 8000);
+    }
+
+    // Create falling hearts continuously
+    setInterval(createFallingHeart, 800);
+
+    // Countdown Timer
+    function updateCountdown() {
+        const now = new Date();
+        const birthday = new Date(2026, 0, 28); // January 28, 2026
+        
+        if (now > birthday) {
+            document.getElementById('countdown-timer').innerHTML = '<div class="countdown-content"><h2>Happy Birthday Princess! 🎉💕</h2></div>';
+            return;
+        }
+        
+        const diff = birthday - now;
+        const hours = Math.floor(diff / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        
+        document.getElementById('hours').textContent = hours;
+        document.getElementById('minutes').textContent = minutes;
+        
+        // Add seconds display
+        let secondsSpan = document.getElementById('seconds');
+        if (!secondsSpan) {
+            const countdownText = document.querySelector('.countdown-content h2');
+            countdownText.innerHTML = `Only <span id="hours">${hours}</span>h <span id="minutes">${minutes}</span>m <span id="seconds">${seconds}</span>s until your special day! 💕`;
+        } else {
+            secondsSpan.textContent = seconds;
+        }
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Heart Trail Effect (mouse cursor)
+    document.addEventListener('mousemove', function(e) {
+        if (Math.random() > 0.8) {
+            createHeartTrail(e.clientX, e.clientY);
+        }
+    });
+
+    function createHeartTrail(x, y) {
+        const heart = document.createElement('div');
+        heart.innerHTML = '💕';
+        heart.style.position = 'fixed';
+        heart.style.left = x + 'px';
+        heart.style.top = y + 'px';
+        heart.style.fontSize = '15px';
+        heart.style.pointerEvents = 'none';
+        heart.style.zIndex = '8';
+        heart.style.opacity = '1';
+        document.body.appendChild(heart);
+
+        let opacity = 1;
+        let yPos = y;
+        let xPos = x;
+
+        let animation = setInterval(() => {
+            opacity -= 0.05;
+            yPos -= 2;
+            xPos += (Math.random() - 0.5) * 2;
+            heart.style.opacity = opacity;
+            heart.style.top = yPos + 'px';
+            heart.style.left = xPos + 'px';
+
+            if (opacity <= 0) {
+                clearInterval(animation);
+                heart.remove();
+            }
+        }, 30);
+    }
+</script>
+
+</html>
